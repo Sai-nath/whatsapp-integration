@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 app.get('/webhook', (req, res) => {
   console.log('Webhook received!');
-  console.log(req.body); // Do something with the webhook payload here
+  console.log(req.body); // Do something with the webhook payload here for test
   let mode = req.query["hub.mode"];
   let challenge = req.query["hub.challenge"];
   let token = req.query["hub.verify_token"];
